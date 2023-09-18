@@ -116,7 +116,7 @@ export default function App() {
           />
         </div>
         <button type="button" onClick={handleSubmit}>
-          submit
+          Submit
         </button>
         <button onClick={resetDataKeepTemplate}>
           Reset All Data But Keep Template
