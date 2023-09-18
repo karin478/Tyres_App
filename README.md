@@ -1,7 +1,5 @@
 # Mercedes-Benz_Tyres_App
  
-# Project Name
-
 ## Introduction
 
 ### What is this project about?
