@@ -14,7 +14,7 @@ This project is designed to manage the states and data related to different sets
 
 1. Clone the repository to your local machine.
 2. Navigate (`cd`) to the directory containing the `docker-compose.yaml` file.
-3. Run `docker compose up`.
+3. Run `docker-compose up`.
 4. Access the frontend at [http://localhost:3000/](http://localhost:3000/).
 
 For backend-specific tests, you can use port 8000: [http://localhost:8000/](http://localhost:8000/).
