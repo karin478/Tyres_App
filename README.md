@@ -1,4 +1,4 @@
-# Mercedes-Benz_Tyres_App
+# Tyres_App
  
 ## Introduction
 
