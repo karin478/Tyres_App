@@ -7,6 +7,9 @@
 Develop a web app for tyre engineers to manage and track tyre sets for car races. Engineers input the number of tyre sets per type (Soft, Medium, Hard) available for each weekend. They also define the race weekend's sessions (e.g., Free Practice, Qualifying, Race) and specify the number of sets to return after each session except the Race. The app should allow saving these settings for recurring race formats.
 
 The main feature includes planning the tyre usage per session, deciding which sets to return, and visualizing remaining sets for the Race. The app tracks each set's state, indicating whether they are new or used. This tool aims to optimize tyre management during race weekends.
+
+TyreTrack harnesses React for its user-friendly interface and Django for robust backend operations, streamlined within Docker containers for optimal deployment. The system's architecture is centered around RESTful APIs, ensuring efficient, scalable communication between front-end and back-end components. A relational database underpins the application, managing complex data with high efficiency. Additionally, API functionalities and integration are rigorously tested using Postman, guaranteeing reliable and seamless performance. This technical synergy provides a powerful, yet user-centric platform for managing race tyre logistics and strategy.
+
 This project is designed to manage the states and data related to different sets of tyres. Additionally, it provides functionalities to manage weekend formats and sessions. The application consists of a frontend and a backend, both of which are containerized using Docker.
 
 ### Deployment Instructions
