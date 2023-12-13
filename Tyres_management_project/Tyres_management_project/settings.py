@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "b004-5-151-198-40.ngrok-free.app",
     "127.0.0.1",
+    "20.42.85.64",
     "https://f6jdyf.csb.app/result",
 ]
 
