@@ -133,6 +133,7 @@ CORS_ALLOW_ALL_ORIGINS = True  # For testing only, not for production
 CORS_ORIGIN_WHITELIST = [
     "https://b004-5-151-198-40.ngrok-free.app",
     "http://localhost:3000",
+    "20.42.85.64",
 
 ]
 
