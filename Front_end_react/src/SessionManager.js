@@ -19,7 +19,7 @@ const SessionManager = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/weekend_session/")
+      .get("http://web:8000/api/weekend_session/")
       .then((response) => {
         setSessions(response.data.results);
       })
@@ -30,7 +30,7 @@ const SessionManager = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/weekend_format/")
+      .get("http://web:8000/api/weekend_format/")
       .then((response) => {
         setFormat(response.data.results[0]);
       })
@@ -61,7 +61,7 @@ const SessionManager = () => {
       return;
     }
     axios
-      .post("http://127.0.0.1:8000/api/weekend_session/", newSession)
+      .post("http://web:8000/api/weekend_session/", newSession)
       .then((response) => {
         setSessions([...sessions, response.data]);
       })
@@ -102,7 +102,7 @@ const SessionManager = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/weekend_template/")
+      .get("http://web:8000/api/weekend_template/")
       .then((response) => {
         setTemplates(response.data.results);
       })
@@ -124,7 +124,7 @@ const SessionManager = () => {
     }
     axios
       .post(
-        "http://127.0.0.1:8000/api/weekend_format/save_weekend_template/",
+        "http://web:8000/api/weekend_format/save_weekend_template/",
         { template_name: templateName }
       )
       .then((response) => {
