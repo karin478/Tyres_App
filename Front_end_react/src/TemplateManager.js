@@ -6,7 +6,7 @@ const TemplateManager = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/weekend_template/")
+      .get("http://web:8000/api/weekend_template/")
       .then((response) => {
         setTemplates(response.data.results);
       })
