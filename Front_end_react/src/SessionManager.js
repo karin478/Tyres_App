@@ -19,7 +19,7 @@ const SessionManager = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/weekend_session/")
+      .get("http://127.0.0.1:8000/api/weekend_session/")
       .then((response) => {
         setSessions(response.data.results);
       })
