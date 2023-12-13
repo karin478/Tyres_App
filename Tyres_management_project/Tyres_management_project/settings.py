@@ -25,12 +25,7 @@ SECRET_KEY = 'django-insecure-eb!=))u-u9lob^!88!x88u31s5k^2(jahmc0^f9-&(!u-6%gkv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    "b004-5-151-198-40.ngrok-free.app",
-    "127.0.0.1",
-    "20.42.85.64",
-    "f6jdyf.csb.app/result",
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -129,17 +124,8 @@ USE_TZ = True
 
 CORS_ALLOW_ALL_ORIGINS = True  # For testing only, not for production
 
-# settings.py
-CORS_ORIGIN_WHITELIST = [
-    "https://b004-5-151-198-40.ngrok-free.app",
-    "http://localhost:3000",
-    "http://localhost:8000",
-    "http://20.42.85.64",
-    "http://10.0.0.5",
-    "https://20.42.85.64",
-    "https://10.0.0.5",
+CORS_ORIGIN_ALLOW_ALL = True
 
-]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
