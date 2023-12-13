@@ -4,25 +4,21 @@ services:
   db:
     image: postgres
     environment:
-      POSTGRES_HOST_AUTH_METHOD: "trust"  # Set authentication method to 'trust' for demo purposes
+      POSTGRES_HOST_AUTH_METHOD: "trust"
 
   web:
-    build: ./Tyres_management_project  # Relative path to your Django project
+    build: ./Tyres_management_project
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./Tyres_management_project:/app  # Relative path to your Django project
+      - ./Tyres_management_project:/app
     ports:
       - "8000:8000"
     depends_on:
       - db
-    environment:
-      # You may need to set database-related environment variables here, 
-      # depending on your Django configuration
-      # For example: DATABASE_URL="postgres://postgres@db:5432/yourdbname"
 
   frontend:
-    build: ./Front_end_react  # Relative path to your React project
+    build: ./Front_end_react
     volumes:
-      - ./Front_end_react:/frontend  # Relative path to your React project
+      - ./Front_end_react:/frontend
     ports:
       - "3000:3000"
