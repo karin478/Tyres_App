@@ -53,7 +53,6 @@ To configure environment variables for different deployment environments:
 
 **Docker Compose**:
    Define variables in the `docker-compose.yml` file under the `environment` section for each service.
-   ```yaml
    frontend:
      environment:
        - REACT_APP_BACKEND_URL=http://your-backend-service
