@@ -6,7 +6,7 @@ const TemplateManager = () => {
 
   useEffect(() => {
     axios
-      .get("http://web:8000/api/weekend_template/")
+      .get(`${process.env.REACT_APP_BACKEND_URL}/api/weekend_template/`)
       .then((response) => {
         setTemplates(response.data.results);
       })
