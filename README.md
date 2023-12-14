@@ -46,6 +46,22 @@ For backend-specific tests, you can use port 8000: [http://localhost:8000/](http
 5. **Data Management**
     - [POST] [http://127.0.0.1:8000/api/weekend_format/clear_all_data/](http://127.0.0.1:8000/api/weekend_format/clear_all_data/): Clear all data, including templates.
     - [POST] [http://127.0.0.1:8000/api/weekend_format/clear_all_data_keepTemplate/](http://127.0.0.1:8000/api/weekend_format/clear_all_data_keepTemplate/): Clear all data except for templates (not fully debugged).
+  
+## Environment Variable Configuration
+
+To configure environment variables for different deployment environments:
+
+**Docker Compose**:
+   Define variables in the `docker-compose.yml` file under the `environment` section for each service.
+   ```yaml
+   frontend:
+     environment:
+       - REACT_APP_BACKEND_URL=http://your-backend-service
+
+**Local Development**:
+For local development, create a .env file in the frontend project and define the variables.
+ - REACT_APP_BACKEND_URL=http://localhost:8000 
+
 ## Project Advantages
 
 ### Easy Deployment with Docker Compose
