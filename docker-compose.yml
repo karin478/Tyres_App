@@ -8,11 +8,11 @@ services:
 
   web:
     build: ./Tyres_management_project
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:443
     volumes:
       - ./Tyres_management_project:/app
     ports:
-      - "8000:8000"
+      - "443:8000"
     depends_on:
       - db
 
@@ -23,4 +23,4 @@ services:
     ports:
       - "80:3000"
     environment:
-      - REACT_APP_BACKEND_URL=https://20.42.85.64:8000
+      - REACT_APP_BACKEND_URL=http://tyreapp.lyndonlyu.com/:443
