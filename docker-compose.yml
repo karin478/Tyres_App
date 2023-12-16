@@ -11,8 +11,6 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./Tyres_management_project:/app
-    ports:
-      - "8000:8000"
     depends_on:
       - db
 
@@ -20,7 +18,13 @@ services:
     build: ./Front_end_react
     volumes:
       - ./Front_end_react:/frontend
-    ports:
-      - "80:3000"
     environment:
-      - REACT_APP_BACKEND_URL=http://20.42.85.64:8000
+      - REACT_APP_BACKEND_URL=http://nginx:80
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - web
+      - frontend
