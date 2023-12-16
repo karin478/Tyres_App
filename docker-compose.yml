@@ -22,7 +22,7 @@ services:
       - REACT_APP_BACKEND_URL=http://nginx:80
 
   nginx:
-    build: ./nginx
+    build: /home/azureuser/nginx
     ports:
       - "80:80"
     depends_on:
